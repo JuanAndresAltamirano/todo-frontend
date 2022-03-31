@@ -8,7 +8,7 @@ In order to run this sample please make sure that you've started backend server 
 
 - [https://github.com/tsucch13/todo-backend](https://github.com/tsucch13/todo-backend)
 
-and you can runn the app by executing the following command:
+and you can run the app by executing the following command:
 
 ```bash
 ng serve --open
