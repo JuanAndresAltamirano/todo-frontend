@@ -5,6 +5,7 @@ import { FolderService } from 'src/app/services/folder.service';
 import { Folder } from 'src/app/interfaces/Folder';
 
 import { Router, ActivatedRoute } from '@angular/router';
+import { TaskFormComponent } from '../task-form/task-form.component';
 
 @Component({
   selector: 'app-folder-list',
@@ -14,7 +15,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class FolderListComponent implements OnInit {
 
   folder: Folder = {
-    name: ''
+    name: '',
+    tasks: []
   }
 
   folders: Folder[] = [];
@@ -59,6 +61,14 @@ export class FolderListComponent implements OnInit {
       },
       err => console.log(err)
     )
+  }
+
+  showTasks(id: number) {
+    if(this.folder.id == id){
+      console.log(this.folder.tasks);
+      this.router.navigate([`/folder/${id}`])
+    }
+ 
   }
 
 }

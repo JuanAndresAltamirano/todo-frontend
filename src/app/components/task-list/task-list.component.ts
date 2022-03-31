@@ -90,6 +90,7 @@ export class TaskListComponent implements OnInit {
       .subscribe(
         res => {
           console.log(res);
+          console.log(task.folderId);
         },
         err=> console.log(err)
       )
