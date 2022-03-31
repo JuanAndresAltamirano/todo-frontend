@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-4 offser-md-4">
+        <div class="card card-body">
+            <form (submit)="submitTask()">
+                <div class="form-group">
+                    <input type="text" name="name" [(ngModel)]="task.name" class="form-control" placeholder="Task Name" autofocus>
+                </div>
+                <button class="btn btn-primary btn-block">
+                    Add
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
