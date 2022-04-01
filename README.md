@@ -3,7 +3,7 @@
 This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Technologies
-- Nest 8.0
+- Angular 13.3.0
 - NodeJS 16.14.2
 - NPM 8.5.5
 - MySQL (MariaDB) 10.4.24
