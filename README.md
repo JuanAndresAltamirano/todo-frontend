@@ -37,4 +37,4 @@ After that, please visit:
 
 ### Note
 
-If something goes wrong, please disable CORS in your browser
+If something goes wrong, please run your browser without CORS.
