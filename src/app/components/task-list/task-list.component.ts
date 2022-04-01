@@ -79,11 +79,6 @@ export class TaskListComponent implements OnInit {
   }
 
   doneTask2(id: number, task: Task) {
-      // if(task.isDone){
-      //   task.isDone = false
-      // }else{
-      //   task.isDone = true
-      // }
       task.isDone ? task.isDone=false : task.isDone=true
       this.taskService.updateTask(id, task)
       

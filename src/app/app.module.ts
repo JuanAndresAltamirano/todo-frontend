@@ -8,19 +8,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { TaskFormComponent } from './components/task-form/task-form.component';
-import { FolderListComponent } from './components/folder-list/folder-list.component';
-import { FolderFormComponent } from './components/folder-form/folder-form.component';
-import { FolderTasksListComponent } from './components/folder-tasks-list/folder-tasks-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     TaskListComponent,
-    TaskFormComponent,
-    FolderListComponent,
-    FolderFormComponent,
-    FolderTasksListComponent
+    TaskFormComponent
   ],
   imports: [
     BrowserModule,

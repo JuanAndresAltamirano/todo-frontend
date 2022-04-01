@@ -1,58 +1,46 @@
 <div class="row">
     <div class="form-check">
-    <div class="col-sm-6">
-    <div class="card mb-3" style="width:18rem">
-        <div class="card-body">
-            <form (submit)="submitTask()">
-                <div class="form-group">
-                    <input type="text" name="name" [(ngModel)]="task.name" class="form-control" placeholder="Task Name"
-                        autofocus>
-                </div>
-                <button class="btn btn-primary btn-block">
-                    Add
-                </button>
-            </form>
-        </div>
-    </div>
-    </div>
-</div>
-
-<!-- <ng-container *ngIf="task.folderId==7"> -->
-<div *ngFor="let task of tasks" class="form-check">
-    <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-        <label class="form-check-label" for="flexCheckChecked">
-          {{task.name}}
-        </label>
-        <button class="btn btn-danger" (click)="deleteTask(task.id!)">
-            Delete
-        </button>
-        <button class="btn btn-secondary" [routerLink]="['/task/update', task.id!]" class="btn btn-secondary">
-            Edit
-        </button> -->
         <div class="col-sm-6">
-    <div class="card mb-3" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">{{task.name}}</h5>
-
-            
-            <div class="w-45" style="float:right">
-                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." [checked]="task.isDone!" (click)="doneTask2(task.id!, this.task)">
-              </div>
-
-            <button class="btn btn-danger mr-2" (click)="deleteTask(task.id!)">
-                Delete
-            </button>
-            <button class="btn btn-secondary" [routerLink]="['/task/update', task.id!]" class="btn btn-success">
-                Edit
-            </button>
-
-            
-
+            <div class="card mb-3" style="width:18rem">
+                <div class="card-body">
+                    <form (submit)="submitTask()">
+                        <div class="form-group">
+                            <input type="text" name="name" [(ngModel)]="task.name" class="form-control"
+                                placeholder="Task Name" autofocus>
+                        </div>
+                        <button class="btn btn-primary btn-block">
+                            Add
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 
-<!-- </div> -->
 
-<!-- </ng-container> -->
+    <div *ngFor="let task of tasks" class="form-check">
+
+        <div class="col-sm-6">
+            <div class="card mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{task.name}}</h5>
+
+
+                    <div class="w-45" style="float:right">
+                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."
+                            [checked]="task.isDone!" (click)="doneTask2(task.id!, this.task)">
+                    </div>
+
+                    <button class="btn btn-danger mr-2" (click)="deleteTask(task.id!)">
+                        Delete
+                    </button>
+                    <button class="btn btn-secondary" [routerLink]="['/task/update', task.id!]" class="btn btn-success">
+                        Edit
+                    </button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
