@@ -2,6 +2,8 @@
 
 This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
+![alt text](todoapp.png)
+
 ## Technologies
 - Angular 13.3.0
 - NodeJS 16.14.2
