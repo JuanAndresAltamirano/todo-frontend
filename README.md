@@ -4,6 +4,10 @@ This project was created with [Angular CLI](https://github.com/angular/angular-c
 
 ![alt text](todoapp.png)
 
+## Features
+- You can create, edit and delete to-do items.
+- You can mark/unmark to-do item as completed and it will change its state on DB.
+
 ## Technologies
 - Angular 13.3.0
 - NodeJS 16.14.2
