@@ -1,6 +1,15 @@
 # TodoFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+This project was created with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+
+## Technologies
+- Nest 8.0
+- NodeJS 16.14.2
+- NPM 8.5.5
+- MySQL (MariaDB) 10.4.24
+
+
+
 
 ## Usage
 
@@ -13,6 +22,7 @@ In order to run this sample please make sure that you've started backend server 
 ```bash
 bash init.sh
 ```
+
 
 ### Manually
 
