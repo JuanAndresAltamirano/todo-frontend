@@ -34,3 +34,7 @@ ng serve --open
 After that, please visit:
 
 - [http://localhost:4200](http:localhost:4200)
+
+### Note
+
+If something goes wrong, please disable CORS in your browser
